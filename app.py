@@ -7,8 +7,8 @@ import pickle
 import joblib
 import pre_process
 
-vect = pickle.load(open('/home/ubuntu/bow.pkl', 'rb')) # Loading Count Vectorizor
-lgr = pickle.load(open('/home/ubuntu/lgr.sav', 'rb')) # Loading Model
+vect = pickle.load(open('bow.pkl', 'rb')) # Loading Count Vectorizor
+lgr = pickle.load(open('lgr.sav', 'rb')) # Loading Model
 
 st.title('Sexual Harassment')
 st.image('https://www.talkingnibs.com/wp-content/uploads/2018/03/MeToo-2.jpg', width = 375)
