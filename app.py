@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pickle
-#import pre_process
+import pre_process
 
 vect = pickle.load(open('bow.pkl', 'rb')) # Loading Count Vectorizor
 lgr = pickle.load(open('lgr.sav', 'rb')) # Loading Model
@@ -12,7 +12,7 @@ query = st.text_input('Enter the event description:')
 if query == None or query == '':
     st.markdown('**Enter a text to get result...**')
 else:
-    #query = pre_process.preprocess_text([query])
+    query = pre_process.preprocess_text([query])
     query = vect.transform(query)
 
     pred = lgr.predict(query)[0] # Predicting Classes
