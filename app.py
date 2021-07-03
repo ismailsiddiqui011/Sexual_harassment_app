@@ -1,8 +1,6 @@
 import streamlit as st
-from tensorflow.keras.models import load_model
 import numpy as np
 import urllib
-import cv2 as cv
 import pickle
 import joblib
 import pre_process
