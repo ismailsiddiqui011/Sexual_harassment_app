@@ -1,8 +1,6 @@
 import streamlit as st
 import numpy as np
-import urllib
 import pickle
-import joblib
 import pre_process
 
 vect = pickle.load(open('bow.pkl', 'rb')) # Loading Count Vectorizor
