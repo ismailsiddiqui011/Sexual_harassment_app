@@ -3,6 +3,4 @@ scikit-learn
 matplotlib
 streamlit
 Cython
-joblib
 pickle-mixin
-urllib
